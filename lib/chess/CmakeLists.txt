@@ -1,0 +1,31 @@
+set(PROJECT_LIBRARY
+    bishop.cpp
+    board.cpp
+    cell.cpp
+    king.cpp
+    knight.cpp
+    pawn.cpp
+    piece.cpp
+    queen.cpp
+    rook.cpp
+    include/bishop.h
+    include/board.h
+    include/cell.h
+    include/colors.h
+    include/king.h
+    include/knight.h
+    include/pawn.h
+    include/piece.h
+    include/queen.h
+    include/rook.h
+)
+
+add_library(CHESS STATIC ${PROJECT_LIBRARY})
+set_property(TARGET CHESS PROPERTY CXX_STANDARD 20)
+
+target_include_directories(CHESS PUBLIC
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+    $<INSTALL_INTERFACE:include>
+)
+
+install(TARGETS CHESS)

@@ -1,0 +1,23 @@
+add_executable(CHESS_GAME WIN32 main.cpp game.cpp game.h timer.cpp timer.h)
+
+target_link_libraries(CHESS_GAME
+    PRIVATE 
+        CHESS              
+        sfml-system           
+        sfml-window 
+        sfml-graphics 
+        nlohmann_json::nlohmann_json  
+        tinyfiledialogs::tinyfiledialogs
+)
+
+
+install(TARGETS CHESS_GAME DESTINATION bin)
+install(DIRECTORY ${CMAKE_SOURCE_DIR}/res DESTINATION bin)
+install(CODE "
+    file(GLOB_RECURSE DLLS \"${CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE}/*.dll\")
+    file(INSTALL DESTINATION \"${CMAKE_INSTALL_PREFIX}/bin\" TYPE FILE FILES \${DLLS})
+")
+
+add_custom_command(TARGET CHESS_GAME POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+    "${CMAKE_SOURCE_DIR}/res" $<TARGET_FILE_DIR:CHESS_GAME>/res)
