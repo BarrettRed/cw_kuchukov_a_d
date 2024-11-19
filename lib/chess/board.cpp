@@ -168,6 +168,35 @@ bool Board::IsCheck(Color king_color) const {
     return false;
 }
 
+bool Board::IsCheckMate(Color king_color) const
+{
+    if (!IsCheck(king_color)) 
+        return false;
+
+    for (int i = 0; i < 8; i++)
+        for (int j = 0; j < 8; j++) {
+            Cell* from_cell = cells_[i][j];
+            Cell* to_cell = nullptr;
+            Piece* piece = from_cell->GetPiece();
+            if (piece && piece->GetColor() == king_color) {
+                for (int y = 0; y < 8; y++)
+                    for (int x = 0; x < 8; x++) {
+                        to_cell = cells_[y][x];
+                        if (piece->CanMove(from_cell, to_cell, this)) {
+                            Board simulated_board(*this);
+                            Cell* simulated_from = simulated_board.GetCell(from_cell->x_, from_cell->y_);
+                            Cell* simulated_to = simulated_board.GetCell(to_cell->x_, to_cell->y_);
+                            simulated_board.MoveFigure(simulated_from, simulated_to);
+                            if (!simulated_board.IsCheck(king_color)) {
+                                return false;
+                            }
+                        }
+                    }
+            }
+        }
+    return true;
+}
+
 Cell* Board::FindKing(Color king_color) const {
     for (int i = 0; i < 8; i++)
         for (int j = 0; j < 8; j++) {
@@ -183,13 +212,15 @@ void Board::MoveFigure(Cell* from_cell, Cell* to_cell, Piece::PieceMove move)
     if (from_cell->GetPiece()->GetColor() == current_player_) {
         if (!to_cell->IsEmpty())
             if (to_cell->GetPiece()->GetPieceName() == Piece::PieceName::King)
-                winner_ = from_cell->GetPiece()->GetColor();
+                winner_ = current_player_;
             to_cell->DeletePiece();
         to_cell->SetPiece(from_cell->GetPiece());
         to_cell->GetPiece()->MoveFigure(from_cell, to_cell, this);
         from_cell->SetPiece(nullptr);
         if (move == Piece::PieceMove::Common)
             current_player_ = current_player_ == Color::White ? Color::Black : Color::White;
+        if (IsCheckMate(current_player_)) 
+            winner_ = current_player_ == Color::White ? Color::Black : Color::White;
     }
 }
 

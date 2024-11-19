@@ -117,10 +117,19 @@ public:
     bool IsCheck(Color king_color) const;
 
     /**
+     * @brief Проверяет на шах и мат королю заданного цвета.
+     * @param king_color Цвет короля.
+     * @return true, если шах и мат, иначе false.
+     */
+
+    bool IsCheckMate(Color king_color) const;
+
+    /**
      * @brief Находит клетку, на которой находится король заданного цвета.
      * @param king_color Цвет короля.
      * @return Указатель на клетку с королем.
      */
+
     Cell* FindKing(Color king_color) const;
 
     /**
