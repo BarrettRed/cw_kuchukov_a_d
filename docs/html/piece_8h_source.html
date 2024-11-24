@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ChessGame: Исходный файл lib/chess/include/piece.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ChessGame
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_6192c2333b8ef9fafd0df5ecb1c357a1.html">chess</a></li><li class="navelem"><a class="el" href="dir_225e2ae88de0639b9c362a3b1912dae9.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">piece.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;colors.h&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">class </span><a class="code hl_class" href="class_board.html">Board</a>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">class </span><a class="code hl_class" href="class_cell.html">Cell</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_piece.html">   13</a></span><span class="keyword">class </span><a class="code hl_class" href="class_piece.html">Piece</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_piece.html#abca41fb010b592e4b926efc7eb03f430">   18</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="class_piece.html#abca41fb010b592e4b926efc7eb03f430">PieceName</a> { <a class="code hl_class" href="class_bishop.html">Bishop</a>, <a class="code hl_class" href="class_king.html">King</a>, <a class="code hl_class" href="class_knight.html">Knight</a>, <a class="code hl_class" href="class_pawn.html">Pawn</a>, <a class="code hl_class" href="class_queen.html">Queen</a>, <a class="code hl_class" href="class_rook.html">Rook</a> };</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_piece.html#a7d6df79e4fd412f588e7dd8c49137552">   23</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="class_piece.html#a7d6df79e4fd412f588e7dd8c49137552">PieceMove</a> { Castling, Common };</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_piece.html#ad74f66ccab60cfbe193d16ef1a790b94">CanMove</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_cell.html">Cell</a>* from_cell, <span class="keyword">const</span> <a class="code hl_class" href="class_cell.html">Cell</a>* to_cell, <span class="keyword">const</span> <a class="code hl_class" href="class_board.html">Board</a>* board) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_piece.html#ab9e345dc0bf7a966d75eac860706a0e2">   38</a></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="class_piece.html">Piece</a>* <a class="code hl_function" href="class_piece.html#ab9e345dc0bf7a966d75eac860706a0e2">GetCopy</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_enumeration" href="class_piece.html#abca41fb010b592e4b926efc7eb03f430">PieceName</a> <a class="code hl_function" href="class_piece.html#a52b6f3ccc97e880d83f3c1b1e8a9d1ea">GetPieceName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    Color <a class="code hl_function" href="class_piece.html#ae52d6e180fd777cc3dffc9baff398438">GetColor</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_piece.html#ad1f41c0285e69b653fd7e96debaca14c">IsFirstMove</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_piece.html#a033842ac7c3c1c94e5c65f20a9583765">SetFirstMove</a>(<span class="keywordtype">bool</span> is_first_move);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_piece.html#a7879822aaf9fe2bf53f302547c7e8131">MoveFigure</a>(<a class="code hl_class" href="class_cell.html">Cell</a>* current, <a class="code hl_class" href="class_cell.html">Cell</a>* target, <a class="code hl_class" href="class_board.html">Board</a>* board);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_class" href="class_piece.html">Piece</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="class_piece.html#a6efd5ce61ad22802aeeae1ac86ea597f">   80</a></span>    <a class="code hl_function" href="class_piece.html#a6efd5ce61ad22802aeeae1ac86ea597f">Piece</a>(<a class="code hl_enumeration" href="class_piece.html#abca41fb010b592e4b926efc7eb03f430">PieceName</a> name, Color color) : name_(name), color_(color), is_first_move_(true) {}</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="class_piece.html#a563e54f49658bfdf7feab93aaa9f120f">   86</a></span>    <a class="code hl_function" href="class_piece.html#a563e54f49658bfdf7feab93aaa9f120f">Piece</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_piece.html">Piece</a>&amp; piece) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="class_piece.html#a51ff123520b2fcc9882d91cfeff9edab">   91</a></span>    <a class="code hl_function" href="class_piece.html#a51ff123520b2fcc9882d91cfeff9edab">~Piece</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <a class="code hl_enumeration" href="class_piece.html#abca41fb010b592e4b926efc7eb03f430">PieceName</a> name_;        </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    Color color_;           </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordtype">bool</span> is_first_move_;    </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>};</div>
+</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="ttc" id="aclass_bishop_html"><div class="ttname"><a href="class_bishop.html">Bishop</a></div><div class="ttdoc">Класс, представляющий слона в шахматах.</div><div class="ttdef"><b>Definition</b> bishop.h:11</div></div>
+<div class="ttc" id="aclass_board_html"><div class="ttname"><a href="class_board.html">Board</a></div><div class="ttdoc">Класс Board представляет шахматную доску и управляет ее состоянием.</div><div class="ttdef"><b>Definition</b> board.h:9</div></div>
+<div class="ttc" id="aclass_cell_html"><div class="ttname"><a href="class_cell.html">Cell</a></div><div class="ttdoc">Класс Cell представляет клетку на шахматной доске.</div><div class="ttdef"><b>Definition</b> cell.h:11</div></div>
+<div class="ttc" id="aclass_king_html"><div class="ttname"><a href="class_king.html">King</a></div><div class="ttdoc">Класс, представляющий короля в шахматах.</div><div class="ttdef"><b>Definition</b> king.h:11</div></div>
+<div class="ttc" id="aclass_knight_html"><div class="ttname"><a href="class_knight.html">Knight</a></div><div class="ttdoc">Класс, представляющий коня в шахматах.</div><div class="ttdef"><b>Definition</b> knight.h:11</div></div>
+<div class="ttc" id="aclass_pawn_html"><div class="ttname"><a href="class_pawn.html">Pawn</a></div><div class="ttdoc">Класс, представляющий пешку в шахматах.</div><div class="ttdef"><b>Definition</b> pawn.h:11</div></div>
+<div class="ttc" id="aclass_piece_html"><div class="ttname"><a href="class_piece.html">Piece</a></div><div class="ttdoc">Абстрактный базовый класс для шахматных фигур.</div><div class="ttdef"><b>Definition</b> piece.h:13</div></div>
+<div class="ttc" id="aclass_piece_html_a033842ac7c3c1c94e5c65f20a9583765"><div class="ttname"><a href="class_piece.html#a033842ac7c3c1c94e5c65f20a9583765">Piece::SetFirstMove</a></div><div class="ttdeci">void SetFirstMove(bool is_first_move)</div><div class="ttdoc">Устанавливает статус первого хода для фигуры.</div><div class="ttdef"><b>Definition</b> piece.cpp:25</div></div>
+<div class="ttc" id="aclass_piece_html_a51ff123520b2fcc9882d91cfeff9edab"><div class="ttname"><a href="class_piece.html#a51ff123520b2fcc9882d91cfeff9edab">Piece::~Piece</a></div><div class="ttdeci">~Piece()=default</div><div class="ttdoc">Деструктор по умолчанию.</div></div>
+<div class="ttc" id="aclass_piece_html_a52b6f3ccc97e880d83f3c1b1e8a9d1ea"><div class="ttname"><a href="class_piece.html#a52b6f3ccc97e880d83f3c1b1e8a9d1ea">Piece::GetPieceName</a></div><div class="ttdeci">PieceName GetPieceName() const</div><div class="ttdoc">Возвращает тип фигуры.</div><div class="ttdef"><b>Definition</b> piece.cpp:10</div></div>
+<div class="ttc" id="aclass_piece_html_a563e54f49658bfdf7feab93aaa9f120f"><div class="ttname"><a href="class_piece.html#a563e54f49658bfdf7feab93aaa9f120f">Piece::Piece</a></div><div class="ttdeci">Piece(const Piece &amp;piece)=default</div><div class="ttdoc">Конструктор копирования по умолчанию.</div></div>
+<div class="ttc" id="aclass_piece_html_a6efd5ce61ad22802aeeae1ac86ea597f"><div class="ttname"><a href="class_piece.html#a6efd5ce61ad22802aeeae1ac86ea597f">Piece::Piece</a></div><div class="ttdeci">Piece(PieceName name, Color color)</div><div class="ttdoc">Конструктор, инициализирующий фигуру с заданным типом и цветом.</div><div class="ttdef"><b>Definition</b> piece.h:80</div></div>
+<div class="ttc" id="aclass_piece_html_a7879822aaf9fe2bf53f302547c7e8131"><div class="ttname"><a href="class_piece.html#a7879822aaf9fe2bf53f302547c7e8131">Piece::MoveFigure</a></div><div class="ttdeci">virtual void MoveFigure(Cell *current, Cell *target, Board *board)</div><div class="ttdoc">Выполняет перемещение фигуры с одной клетки на другую.</div><div class="ttdef"><b>Definition</b> piece.cpp:30</div></div>
+<div class="ttc" id="aclass_piece_html_a7d6df79e4fd412f588e7dd8c49137552"><div class="ttname"><a href="class_piece.html#a7d6df79e4fd412f588e7dd8c49137552">Piece::PieceMove</a></div><div class="ttdeci">PieceMove</div><div class="ttdoc">Типы возможных ходов фигуры.</div><div class="ttdef"><b>Definition</b> piece.h:23</div></div>
+<div class="ttc" id="aclass_piece_html_ab9e345dc0bf7a966d75eac860706a0e2"><div class="ttname"><a href="class_piece.html#ab9e345dc0bf7a966d75eac860706a0e2">Piece::GetCopy</a></div><div class="ttdeci">virtual Piece * GetCopy() const =0</div><div class="ttdoc">Возвращает копию текущей фигуры.</div></div>
+<div class="ttc" id="aclass_piece_html_abca41fb010b592e4b926efc7eb03f430"><div class="ttname"><a href="class_piece.html#abca41fb010b592e4b926efc7eb03f430">Piece::PieceName</a></div><div class="ttdeci">PieceName</div><div class="ttdoc">Названия типов фигур.</div><div class="ttdef"><b>Definition</b> piece.h:18</div></div>
+<div class="ttc" id="aclass_piece_html_ad1f41c0285e69b653fd7e96debaca14c"><div class="ttname"><a href="class_piece.html#ad1f41c0285e69b653fd7e96debaca14c">Piece::IsFirstMove</a></div><div class="ttdeci">bool IsFirstMove() const</div><div class="ttdoc">Проверяет, является ли текущий ход для фигуры первым.</div><div class="ttdef"><b>Definition</b> piece.cpp:20</div></div>
+<div class="ttc" id="aclass_piece_html_ad74f66ccab60cfbe193d16ef1a790b94"><div class="ttname"><a href="class_piece.html#ad74f66ccab60cfbe193d16ef1a790b94">Piece::CanMove</a></div><div class="ttdeci">virtual bool CanMove(const Cell *from_cell, const Cell *to_cell, const Board *board) const =0</div><div class="ttdoc">Проверяет возможность хода фигуры с одной клетки на другую.</div><div class="ttdef"><b>Definition</b> piece.cpp:5</div></div>
+<div class="ttc" id="aclass_piece_html_ae52d6e180fd777cc3dffc9baff398438"><div class="ttname"><a href="class_piece.html#ae52d6e180fd777cc3dffc9baff398438">Piece::GetColor</a></div><div class="ttdeci">Color GetColor() const</div><div class="ttdoc">Возвращает цвет фигуры.</div><div class="ttdef"><b>Definition</b> piece.cpp:15</div></div>
+<div class="ttc" id="aclass_queen_html"><div class="ttname"><a href="class_queen.html">Queen</a></div><div class="ttdoc">Класс, представляющий ферзя в шахматах.</div><div class="ttdef"><b>Definition</b> queen.h:11</div></div>
+<div class="ttc" id="aclass_rook_html"><div class="ttname"><a href="class_rook.html">Rook</a></div><div class="ttdoc">Класс, представляющий ладью в шахматах.</div><div class="ttdef"><b>Definition</b> rook.h:11</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

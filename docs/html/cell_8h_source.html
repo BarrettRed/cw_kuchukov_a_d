@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ChessGame: Исходный файл lib/chess/include/cell.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ChessGame
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_6192c2333b8ef9fafd0df5ecb1c357a1.html">chess</a></li><li class="navelem"><a class="el" href="dir_225e2ae88de0639b9c362a3b1912dae9.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">cell.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;colors.h&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;piece.h&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_cell.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="class_cell.html">Cell</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_cell.html#a70b1ed2fb5235d7d07e9b3fc9bd13e73">   13</a></span>    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_cell.html#a70b1ed2fb5235d7d07e9b3fc9bd13e73">x_</a>;  </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_cell.html#a6b25c40012d442b1222dac0e41e89c2f">   14</a></span>    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_cell.html#a6b25c40012d442b1222dac0e41e89c2f">y_</a>;  </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_cell.html#abfdb4f48d870399a2e1c8131666f3e9d">   23</a></span>    <a class="code hl_function" href="class_cell.html#abfdb4f48d870399a2e1c8131666f3e9d">Cell</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, Color color, <a class="code hl_class" href="class_piece.html">Piece</a>* piece) : <a class="code hl_variable" href="class_cell.html#a70b1ed2fb5235d7d07e9b3fc9bd13e73">x_</a>(x), <a class="code hl_variable" href="class_cell.html#a6b25c40012d442b1222dac0e41e89c2f">y_</a>(y), color_(color), piece_(piece), is_available_(false) {};</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_cell.html#adce620be13d0d95b315c76f127faa532">   29</a></span>    <a class="code hl_function" href="class_cell.html#adce620be13d0d95b315c76f127faa532">Cell</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_cell.html">Cell</a>&amp; cell) : <a class="code hl_variable" href="class_cell.html#a70b1ed2fb5235d7d07e9b3fc9bd13e73">x_</a>(cell.<a class="code hl_variable" href="class_cell.html#a70b1ed2fb5235d7d07e9b3fc9bd13e73">x_</a>), <a class="code hl_variable" href="class_cell.html#a6b25c40012d442b1222dac0e41e89c2f">y_</a>(cell.<a class="code hl_variable" href="class_cell.html#a6b25c40012d442b1222dac0e41e89c2f">y_</a>),</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                             color_(cell.color_),</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                             piece_(cell.piece_ ? cell.piece_-&gt;GetCopy() : nullptr),</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                             is_available_(cell.is_available_) {};</div>
+</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_function" href="class_cell.html#a9fa559f7a28e2b4336c6879ca09304d8">~Cell</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_class" href="class_piece.html">Piece</a>* <a class="code hl_function" href="class_cell.html#a285d1da937efc85627b17874e16518cf">GetPiece</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    Color <a class="code hl_function" href="class_cell.html#a280313c8b0150cd0bfaf751c1b748bfb">GetColor</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_cell.html#af083d2780656cc35e842034dc39013c0">IsEnemy</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_cell.html">Cell</a>* target) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_cell.html#ac49c861b60ac8b4658b6ed874934a88e">IsEmpty</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_cell.html#a39d994f167d5ed5eef20ee70df6558f4">DeletePiece</a>();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_cell.html#a44028ebffda121e42e291b215647cc4d">SetPiece</a>(<a class="code hl_class" href="class_piece.html">Piece</a>* piece);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_cell.html#a110c1177667a268062e56359acbd7c4a">IsAvailable</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_cell.html#af9d1ab677edf68d07c72755750c81b1d">SetAvailable</a>(<span class="keywordtype">bool</span> available);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    Color color_;           </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <a class="code hl_class" href="class_piece.html">Piece</a>* piece_;          </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordtype">bool</span> is_available_;     </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>};</div>
+</div>
+<div class="ttc" id="aclass_cell_html"><div class="ttname"><a href="class_cell.html">Cell</a></div><div class="ttdoc">Класс Cell представляет клетку на шахматной доске.</div><div class="ttdef"><b>Definition</b> cell.h:11</div></div>
+<div class="ttc" id="aclass_cell_html_a110c1177667a268062e56359acbd7c4a"><div class="ttname"><a href="class_cell.html#a110c1177667a268062e56359acbd7c4a">Cell::IsAvailable</a></div><div class="ttdeci">bool IsAvailable() const</div><div class="ttdoc">Проверяет, доступна ли клетка для хода.</div><div class="ttdef"><b>Definition</b> cell.cpp:42</div></div>
+<div class="ttc" id="aclass_cell_html_a280313c8b0150cd0bfaf751c1b748bfb"><div class="ttname"><a href="class_cell.html#a280313c8b0150cd0bfaf751c1b748bfb">Cell::GetColor</a></div><div class="ttdeci">Color GetColor() const</div><div class="ttdoc">Возвращает цвет клетки.</div><div class="ttdef"><b>Definition</b> cell.cpp:15</div></div>
+<div class="ttc" id="aclass_cell_html_a285d1da937efc85627b17874e16518cf"><div class="ttname"><a href="class_cell.html#a285d1da937efc85627b17874e16518cf">Cell::GetPiece</a></div><div class="ttdeci">Piece * GetPiece() const</div><div class="ttdoc">Возвращает указатель на фигуру, находящуюся на клетке.</div><div class="ttdef"><b>Definition</b> cell.cpp:10</div></div>
+<div class="ttc" id="aclass_cell_html_a39d994f167d5ed5eef20ee70df6558f4"><div class="ttname"><a href="class_cell.html#a39d994f167d5ed5eef20ee70df6558f4">Cell::DeletePiece</a></div><div class="ttdeci">void DeletePiece()</div><div class="ttdoc">Удаляет фигуру с клетки.</div><div class="ttdef"><b>Definition</b> cell.cpp:30</div></div>
+<div class="ttc" id="aclass_cell_html_a44028ebffda121e42e291b215647cc4d"><div class="ttname"><a href="class_cell.html#a44028ebffda121e42e291b215647cc4d">Cell::SetPiece</a></div><div class="ttdeci">void SetPiece(Piece *piece)</div><div class="ttdoc">Устанавливает фигуру на клетку.</div><div class="ttdef"><b>Definition</b> cell.cpp:37</div></div>
+<div class="ttc" id="aclass_cell_html_a6b25c40012d442b1222dac0e41e89c2f"><div class="ttname"><a href="class_cell.html#a6b25c40012d442b1222dac0e41e89c2f">Cell::y_</a></div><div class="ttdeci">const int y_</div><div class="ttdoc">Координата строки (Y) клетки.</div><div class="ttdef"><b>Definition</b> cell.h:14</div></div>
+<div class="ttc" id="aclass_cell_html_a70b1ed2fb5235d7d07e9b3fc9bd13e73"><div class="ttname"><a href="class_cell.html#a70b1ed2fb5235d7d07e9b3fc9bd13e73">Cell::x_</a></div><div class="ttdeci">const int x_</div><div class="ttdoc">Координата столбца (X) клетки.</div><div class="ttdef"><b>Definition</b> cell.h:13</div></div>
+<div class="ttc" id="aclass_cell_html_a9fa559f7a28e2b4336c6879ca09304d8"><div class="ttname"><a href="class_cell.html#a9fa559f7a28e2b4336c6879ca09304d8">Cell::~Cell</a></div><div class="ttdeci">~Cell()</div><div class="ttdoc">Деструктор, удаляющий фигуру на клетке, если она есть.</div><div class="ttdef"><b>Definition</b> cell.cpp:5</div></div>
+<div class="ttc" id="aclass_cell_html_abfdb4f48d870399a2e1c8131666f3e9d"><div class="ttname"><a href="class_cell.html#abfdb4f48d870399a2e1c8131666f3e9d">Cell::Cell</a></div><div class="ttdeci">Cell(int x, int y, Color color, Piece *piece)</div><div class="ttdoc">Конструктор, инициализирующий клетку заданными параметрами.</div><div class="ttdef"><b>Definition</b> cell.h:23</div></div>
+<div class="ttc" id="aclass_cell_html_ac49c861b60ac8b4658b6ed874934a88e"><div class="ttname"><a href="class_cell.html#ac49c861b60ac8b4658b6ed874934a88e">Cell::IsEmpty</a></div><div class="ttdeci">bool IsEmpty() const</div><div class="ttdoc">Проверяет, пуста ли клетка.</div><div class="ttdef"><b>Definition</b> cell.cpp:25</div></div>
+<div class="ttc" id="aclass_cell_html_adce620be13d0d95b315c76f127faa532"><div class="ttname"><a href="class_cell.html#adce620be13d0d95b315c76f127faa532">Cell::Cell</a></div><div class="ttdeci">Cell(const Cell &amp;cell)</div><div class="ttdoc">Конструктор копирования для создания копии клетки.</div><div class="ttdef"><b>Definition</b> cell.h:29</div></div>
+<div class="ttc" id="aclass_cell_html_af083d2780656cc35e842034dc39013c0"><div class="ttname"><a href="class_cell.html#af083d2780656cc35e842034dc39013c0">Cell::IsEnemy</a></div><div class="ttdeci">bool IsEnemy(const Cell *target) const</div><div class="ttdoc">Проверяет, является ли фигура на целевой клетке вражеской.</div><div class="ttdef"><b>Definition</b> cell.cpp:20</div></div>
+<div class="ttc" id="aclass_cell_html_af9d1ab677edf68d07c72755750c81b1d"><div class="ttname"><a href="class_cell.html#af9d1ab677edf68d07c72755750c81b1d">Cell::SetAvailable</a></div><div class="ttdeci">void SetAvailable(bool available)</div><div class="ttdoc">Устанавливает доступность клетки для хода.</div><div class="ttdef"><b>Definition</b> cell.cpp:47</div></div>
+<div class="ttc" id="aclass_piece_html"><div class="ttname"><a href="class_piece.html">Piece</a></div><div class="ttdoc">Абстрактный базовый класс для шахматных фигур.</div><div class="ttdef"><b>Definition</b> piece.h:13</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

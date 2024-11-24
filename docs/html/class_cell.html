@@ -1,0 +1,404 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ChessGame: Класс Cell</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ChessGame
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="class_cell-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс Cell</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс <a class="el" href="class_cell.html" title="Класс Cell представляет клетку на шахматной доске.">Cell</a> представляет клетку на шахматной доске.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="cell_8h_source.html">cell.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:abfdb4f48d870399a2e1c8131666f3e9d" id="r_abfdb4f48d870399a2e1c8131666f3e9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfdb4f48d870399a2e1c8131666f3e9d">Cell</a> (int x, int y, Color color, <a class="el" href="class_piece.html">Piece</a> *piece)</td></tr>
+<tr class="memdesc:abfdb4f48d870399a2e1c8131666f3e9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор, инициализирующий клетку заданными параметрами.  <br /></td></tr>
+<tr class="separator:abfdb4f48d870399a2e1c8131666f3e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adce620be13d0d95b315c76f127faa532" id="r_adce620be13d0d95b315c76f127faa532"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adce620be13d0d95b315c76f127faa532">Cell</a> (const <a class="el" href="class_cell.html">Cell</a> &amp;cell)</td></tr>
+<tr class="memdesc:adce620be13d0d95b315c76f127faa532"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования для создания копии клетки.  <br /></td></tr>
+<tr class="separator:adce620be13d0d95b315c76f127faa532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fa559f7a28e2b4336c6879ca09304d8" id="r_a9fa559f7a28e2b4336c6879ca09304d8"><td class="memItemLeft" align="right" valign="top"><a id="a9fa559f7a28e2b4336c6879ca09304d8" name="a9fa559f7a28e2b4336c6879ca09304d8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~Cell</b> ()</td></tr>
+<tr class="memdesc:a9fa559f7a28e2b4336c6879ca09304d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор, удаляющий фигуру на клетке, если она есть. <br /></td></tr>
+<tr class="separator:a9fa559f7a28e2b4336c6879ca09304d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a285d1da937efc85627b17874e16518cf" id="r_a285d1da937efc85627b17874e16518cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_piece.html">Piece</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a285d1da937efc85627b17874e16518cf">GetPiece</a> () const</td></tr>
+<tr class="memdesc:a285d1da937efc85627b17874e16518cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает указатель на фигуру, находящуюся на клетке.  <br /></td></tr>
+<tr class="separator:a285d1da937efc85627b17874e16518cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a280313c8b0150cd0bfaf751c1b748bfb" id="r_a280313c8b0150cd0bfaf751c1b748bfb"><td class="memItemLeft" align="right" valign="top">Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a280313c8b0150cd0bfaf751c1b748bfb">GetColor</a> () const</td></tr>
+<tr class="memdesc:a280313c8b0150cd0bfaf751c1b748bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает цвет клетки.  <br /></td></tr>
+<tr class="separator:a280313c8b0150cd0bfaf751c1b748bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af083d2780656cc35e842034dc39013c0" id="r_af083d2780656cc35e842034dc39013c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af083d2780656cc35e842034dc39013c0">IsEnemy</a> (const <a class="el" href="class_cell.html">Cell</a> *target) const</td></tr>
+<tr class="memdesc:af083d2780656cc35e842034dc39013c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, является ли фигура на целевой клетке вражеской.  <br /></td></tr>
+<tr class="separator:af083d2780656cc35e842034dc39013c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac49c861b60ac8b4658b6ed874934a88e" id="r_ac49c861b60ac8b4658b6ed874934a88e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac49c861b60ac8b4658b6ed874934a88e">IsEmpty</a> () const</td></tr>
+<tr class="memdesc:ac49c861b60ac8b4658b6ed874934a88e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, пуста ли клетка.  <br /></td></tr>
+<tr class="separator:ac49c861b60ac8b4658b6ed874934a88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39d994f167d5ed5eef20ee70df6558f4" id="r_a39d994f167d5ed5eef20ee70df6558f4"><td class="memItemLeft" align="right" valign="top"><a id="a39d994f167d5ed5eef20ee70df6558f4" name="a39d994f167d5ed5eef20ee70df6558f4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DeletePiece</b> ()</td></tr>
+<tr class="memdesc:a39d994f167d5ed5eef20ee70df6558f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаляет фигуру с клетки. <br /></td></tr>
+<tr class="separator:a39d994f167d5ed5eef20ee70df6558f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44028ebffda121e42e291b215647cc4d" id="r_a44028ebffda121e42e291b215647cc4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44028ebffda121e42e291b215647cc4d">SetPiece</a> (<a class="el" href="class_piece.html">Piece</a> *piece)</td></tr>
+<tr class="memdesc:a44028ebffda121e42e291b215647cc4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает фигуру на клетку.  <br /></td></tr>
+<tr class="separator:a44028ebffda121e42e291b215647cc4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a110c1177667a268062e56359acbd7c4a" id="r_a110c1177667a268062e56359acbd7c4a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a110c1177667a268062e56359acbd7c4a">IsAvailable</a> () const</td></tr>
+<tr class="memdesc:a110c1177667a268062e56359acbd7c4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет, доступна ли клетка для хода.  <br /></td></tr>
+<tr class="separator:a110c1177667a268062e56359acbd7c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9d1ab677edf68d07c72755750c81b1d" id="r_af9d1ab677edf68d07c72755750c81b1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9d1ab677edf68d07c72755750c81b1d">SetAvailable</a> (bool available)</td></tr>
+<tr class="memdesc:af9d1ab677edf68d07c72755750c81b1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает доступность клетки для хода.  <br /></td></tr>
+<tr class="separator:af9d1ab677edf68d07c72755750c81b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a70b1ed2fb5235d7d07e9b3fc9bd13e73" id="r_a70b1ed2fb5235d7d07e9b3fc9bd13e73"><td class="memItemLeft" align="right" valign="top"><a id="a70b1ed2fb5235d7d07e9b3fc9bd13e73" name="a70b1ed2fb5235d7d07e9b3fc9bd13e73"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>x_</b></td></tr>
+<tr class="memdesc:a70b1ed2fb5235d7d07e9b3fc9bd13e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Координата столбца (X) клетки. <br /></td></tr>
+<tr class="separator:a70b1ed2fb5235d7d07e9b3fc9bd13e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b25c40012d442b1222dac0e41e89c2f" id="r_a6b25c40012d442b1222dac0e41e89c2f"><td class="memItemLeft" align="right" valign="top"><a id="a6b25c40012d442b1222dac0e41e89c2f" name="a6b25c40012d442b1222dac0e41e89c2f"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>y_</b></td></tr>
+<tr class="memdesc:a6b25c40012d442b1222dac0e41e89c2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Координата строки (Y) клетки. <br /></td></tr>
+<tr class="separator:a6b25c40012d442b1222dac0e41e89c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс <a class="el" href="class_cell.html" title="Класс Cell представляет клетку на шахматной доске.">Cell</a> представляет клетку на шахматной доске. </p>
+<p>Класс управляет состоянием клетки, включая фигуру, цвет клетки и доступность для хода. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="abfdb4f48d870399a2e1c8131666f3e9d" name="abfdb4f48d870399a2e1c8131666f3e9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfdb4f48d870399a2e1c8131666f3e9d">&#9670;&#160;</a></span>Cell() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Cell::Cell </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>color</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_piece.html">Piece</a> *</td>          <td class="paramname"><span class="paramname"><em>piece</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор, инициализирующий клетку заданными параметрами. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Координата столбца. </td></tr>
+    <tr><td class="paramname">y</td><td>Координата строки. </td></tr>
+    <tr><td class="paramname">color</td><td>Цвет клетки. </td></tr>
+    <tr><td class="paramname">piece</td><td>Указатель на фигуру, находящуюся на клетке (может быть nullptr). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adce620be13d0d95b315c76f127faa532" name="adce620be13d0d95b315c76f127faa532"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adce620be13d0d95b315c76f127faa532">&#9670;&#160;</a></span>Cell() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Cell::Cell </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_cell.html">Cell</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>cell</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор копирования для создания копии клетки. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cell</td><td>Другая клетка для копирования. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a280313c8b0150cd0bfaf751c1b748bfb" name="a280313c8b0150cd0bfaf751c1b748bfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a280313c8b0150cd0bfaf751c1b748bfb">&#9670;&#160;</a></span>GetColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color Cell::GetColor </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает цвет клетки. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Цвет клетки. </dd></dl>
+
+</div>
+</div>
+<a id="a285d1da937efc85627b17874e16518cf" name="a285d1da937efc85627b17874e16518cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a285d1da937efc85627b17874e16518cf">&#9670;&#160;</a></span>GetPiece()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_piece.html">Piece</a> * Cell::GetPiece </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Возвращает указатель на фигуру, находящуюся на клетке. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Указатель на фигуру или nullptr, если клетка пуста. </dd></dl>
+
+</div>
+</div>
+<a id="a110c1177667a268062e56359acbd7c4a" name="a110c1177667a268062e56359acbd7c4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a110c1177667a268062e56359acbd7c4a">&#9670;&#160;</a></span>IsAvailable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Cell::IsAvailable </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверяет, доступна ли клетка для хода. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если клетка доступна, иначе false. </dd></dl>
+
+</div>
+</div>
+<a id="ac49c861b60ac8b4658b6ed874934a88e" name="ac49c861b60ac8b4658b6ed874934a88e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac49c861b60ac8b4658b6ed874934a88e">&#9670;&#160;</a></span>IsEmpty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Cell::IsEmpty </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверяет, пуста ли клетка. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если клетка пуста, иначе false. </dd></dl>
+
+</div>
+</div>
+<a id="af083d2780656cc35e842034dc39013c0" name="af083d2780656cc35e842034dc39013c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af083d2780656cc35e842034dc39013c0">&#9670;&#160;</a></span>IsEnemy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Cell::IsEnemy </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_cell.html">Cell</a> *</td>          <td class="paramname"><span class="paramname"><em>target</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверяет, является ли фигура на целевой клетке вражеской. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>Указатель на целевую клетку для проверки. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если фигура на целевой клетке вражеская, иначе false. </dd></dl>
+
+</div>
+</div>
+<a id="af9d1ab677edf68d07c72755750c81b1d" name="af9d1ab677edf68d07c72755750c81b1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9d1ab677edf68d07c72755750c81b1d">&#9670;&#160;</a></span>SetAvailable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cell::SetAvailable </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>available</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Устанавливает доступность клетки для хода. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">available</td><td>Доступность клетки. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a44028ebffda121e42e291b215647cc4d" name="a44028ebffda121e42e291b215647cc4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44028ebffda121e42e291b215647cc4d">&#9670;&#160;</a></span>SetPiece()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cell::SetPiece </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_piece.html">Piece</a> *</td>          <td class="paramname"><span class="paramname"><em>piece</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Устанавливает фигуру на клетку. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">piece</td><td>Указатель на фигуру. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>lib/chess/include/<a class="el" href="cell_8h_source.html">cell.h</a></li>
+<li>lib/chess/<b>cell.cpp</b></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

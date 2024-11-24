@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ChessGame: Исходный файл lib/chess/include/pawn.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ChessGame
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_6192c2333b8ef9fafd0df5ecb1c357a1.html">chess</a></li><li class="navelem"><a class="el" href="dir_225e2ae88de0639b9c362a3b1912dae9.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">pawn.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;piece.h&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_pawn.html">   10</a></span><span class="keyword">class </span><a class="code hl_class" href="class_pawn.html">Pawn</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_piece.html">Piece</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_pawn.html#ac6f7c3f987be52c575b73f85167d3a81">CanMove</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_cell.html">Cell</a>* from_cell, <span class="keyword">const</span> <a class="code hl_class" href="class_cell.html">Cell</a>* to_cell, <span class="keyword">const</span> <a class="code hl_class" href="class_board.html">Board</a>* board) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_pawn.html#a1847d5f804fbee23ddfee59e805707bc">MoveFigure</a>(<a class="code hl_class" href="class_cell.html">Cell</a>* current, <a class="code hl_class" href="class_cell.html">Cell</a>* target, <a class="code hl_class" href="class_board.html">Board</a>* board) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_class" href="class_piece.html">Piece</a>* <a class="code hl_function" href="class_pawn.html#a12bc39116baf58d559d648ecf2847732">GetCopy</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_pawn.html#a3e1ac517cf828f52957f54179a455922">   44</a></span>    <a class="code hl_function" href="class_pawn.html#a3e1ac517cf828f52957f54179a455922">Pawn</a>(Color color) : <a class="code hl_class" href="class_piece.html">Piece</a>(<a class="code hl_enumeration" href="class_piece.html#abca41fb010b592e4b926efc7eb03f430">PieceName</a>::<a class="code hl_class" href="class_pawn.html">Pawn</a>, color) {}</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_pawn.html#a9ac6134b795512279212f8261bd6a188">   49</a></span>    <a class="code hl_function" href="class_pawn.html#a9ac6134b795512279212f8261bd6a188">Pawn</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_pawn.html">Pawn</a>&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>};</div>
+</div>
+<div class="ttc" id="aclass_board_html"><div class="ttname"><a href="class_board.html">Board</a></div><div class="ttdoc">Класс Board представляет шахматную доску и управляет ее состоянием.</div><div class="ttdef"><b>Definition</b> board.h:9</div></div>
+<div class="ttc" id="aclass_cell_html"><div class="ttname"><a href="class_cell.html">Cell</a></div><div class="ttdoc">Класс Cell представляет клетку на шахматной доске.</div><div class="ttdef"><b>Definition</b> cell.h:11</div></div>
+<div class="ttc" id="aclass_pawn_html"><div class="ttname"><a href="class_pawn.html">Pawn</a></div><div class="ttdoc">Класс, представляющий пешку в шахматах.</div><div class="ttdef"><b>Definition</b> pawn.h:11</div></div>
+<div class="ttc" id="aclass_pawn_html_a12bc39116baf58d559d648ecf2847732"><div class="ttname"><a href="class_pawn.html#a12bc39116baf58d559d648ecf2847732">Pawn::GetCopy</a></div><div class="ttdeci">Piece * GetCopy() const override</div><div class="ttdoc">Создает копию пешки.</div><div class="ttdef"><b>Definition</b> pawn.cpp:35</div></div>
+<div class="ttc" id="aclass_pawn_html_a1847d5f804fbee23ddfee59e805707bc"><div class="ttname"><a href="class_pawn.html#a1847d5f804fbee23ddfee59e805707bc">Pawn::MoveFigure</a></div><div class="ttdeci">void MoveFigure(Cell *current, Cell *target, Board *board) override</div><div class="ttdoc">Выполняет ход пешкой, включая взятие на проходе и превращение.</div><div class="ttdef"><b>Definition</b> pawn.cpp:23</div></div>
+<div class="ttc" id="aclass_pawn_html_a3e1ac517cf828f52957f54179a455922"><div class="ttname"><a href="class_pawn.html#a3e1ac517cf828f52957f54179a455922">Pawn::Pawn</a></div><div class="ttdeci">Pawn(Color color)</div><div class="ttdoc">Конструктор, создающий пешку заданного цвета.</div><div class="ttdef"><b>Definition</b> pawn.h:44</div></div>
+<div class="ttc" id="aclass_pawn_html_a9ac6134b795512279212f8261bd6a188"><div class="ttname"><a href="class_pawn.html#a9ac6134b795512279212f8261bd6a188">Pawn::Pawn</a></div><div class="ttdeci">Pawn(const Pawn &amp;)=default</div><div class="ttdoc">Конструктор копирования.</div></div>
+<div class="ttc" id="aclass_pawn_html_ac6f7c3f987be52c575b73f85167d3a81"><div class="ttname"><a href="class_pawn.html#ac6f7c3f987be52c575b73f85167d3a81">Pawn::CanMove</a></div><div class="ttdeci">bool CanMove(const Cell *from_cell, const Cell *to_cell, const Board *board) const override</div><div class="ttdoc">Проверяет, может ли пешка переместиться из одной клетки в другую.</div><div class="ttdef"><b>Definition</b> pawn.cpp:6</div></div>
+<div class="ttc" id="aclass_piece_html"><div class="ttname"><a href="class_piece.html">Piece</a></div><div class="ttdoc">Абстрактный базовый класс для шахматных фигур.</div><div class="ttdef"><b>Definition</b> piece.h:13</div></div>
+<div class="ttc" id="aclass_piece_html_abca41fb010b592e4b926efc7eb03f430"><div class="ttname"><a href="class_piece.html#abca41fb010b592e4b926efc7eb03f430">Piece::PieceName</a></div><div class="ttdeci">PieceName</div><div class="ttdoc">Названия типов фигур.</div><div class="ttdef"><b>Definition</b> piece.h:18</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>
