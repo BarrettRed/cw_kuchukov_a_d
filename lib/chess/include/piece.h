@@ -88,7 +88,7 @@ public:
     /**
      * @brief Деструктор по умолчанию.
      */
-    ~Piece() = default;
+    virtual ~Piece() = default;
 
 private:
     PieceName name_;        ///< Тип фигуры.
